@@ -1,5 +1,5 @@
 body{background-color: #33b2fc;}
-#contador{text-align: center;font-family:Dancing Script; font-size: 20px;color: rgb(36, 102, 159);opacity: 0;
+#contador{text-align: center;font-family:Dancing Script; font-size: 25px;color: rgb(36, 102, 159);opacity: 0;
       transform: translateX(-100px);
       animation: slideIn 1s ease-out forwards;}}
 #Festejo{text-align: center;font-family:Dancing Script;font-size: 50px;color:wheat;background-color: green;padding: 65px;border-radius: 16px;} 
@@ -59,9 +59,8 @@ body{background-color: #33b2fc;}
 .parrafo{font-size: 30px;color: blanchedalmond; text-align: center;opacity: 0;
       transform: translateX(-100px);
       animation: slideIn 1s ease-out forwards;}
-.fondo{size: cover; width: 100%;
-      height: 100%;} 
-.tabla{text-align: center;font-family:Dancing Script; font-size: 35px;color: rgb(36, 102, 159);opacity: 0;
+.fondo{size: cover; width: 100%; height: 100%;} 
+.tabla{text-align: center;font-family:Dancing Script; font-size: 25px;color: rgb(36, 102, 159);opacity: 0;
       transform: translateX(-100px);
       animation: slideIn 1s ease-out forwards;}
 .encabezado{text-align: center;font-family:Dancing Script; font-size: 35px;color: rgb(230, 235, 239);opacity: 0;
@@ -73,9 +72,7 @@ body{background-color: #33b2fc;}
         transform: translateX(0);
       }
 .ubicacion{ size: cover;width: 100%;
-      height: auto;opacity: 0;
-      transform: translateX(-100px);
-      animation: slideIn 1s ease-out forwards;}}
+      height: auto;}
  .encuesta {
       background: white;
       padding: 30px;
@@ -84,7 +81,7 @@ body{background-color: #33b2fc;}
       text-align: center; opacity: 0;
       transform: translateX(-100px);
       animation: slideIn 1s ease-out forwards;}
-    }
+
 
     label {
       display: block;
