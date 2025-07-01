@@ -90,14 +90,6 @@ body{background-color: #33b2fc;}
       margin-top: 2'px;
       font-weight: bold;
     }
- .invisible {
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.8s ease;
-    }
-
-    .visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+.invisible {opacity: 0; transform: translateY(50px); transition: all 0.8s ease;}
+.visible {opacity: 1; transform: translateY(0);}
 
