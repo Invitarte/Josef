@@ -102,20 +102,22 @@
     
       <a href="https://maps.app.goo.gl/hsXyF2AVv5bcwNDg8"><img id="despedida" class="ubicacion"  src="Josef Aaroon (4).svg" alt="ubi"></a>
 <script>
-  function mostrarDeslizables() {
-    const elementos = document.querySelectorAll('.deslizable[id]');
+  function mostrarPorID() {
+    const elementosConID = document.querySelectorAll('[id]');
     const scrollY = window.scrollY + window.innerHeight;
 
-    elementos.forEach(el => {
-      if (scrollY > el.offsetTop + 50) {
+    elementosConID.forEach(el => {
+      const pos = el.offsetTop;
+      if (scrollY > pos + 50) {
         el.classList.add('visible');
       }
     });
   }
 
-  window.addEventListener('scroll', mostrarDeslizables);
-  window.addEventListener('load', mostrarDeslizables);
+  window.addEventListener('scroll', mostrarPorID);
+  window.addEventListener('load', mostrarPorID);
 </script>
+
 </body>
      
 
