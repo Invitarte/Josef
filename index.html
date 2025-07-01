@@ -12,9 +12,9 @@
 </head> 
 
 <body>
-  <img class="fondo" src="Josef Aaroon (2).svg" alt="diseño">
+  <img class="fondo" id="Bienvenida" src="Josef Aaroon (2).svg" alt="diseño">
  <!--COMENZAR TABLE-->
- <table align="center">
+ <table align="center" id="Bienvenida">
   <tr>
     <td class="encabezado">Fecha</td>
     <td class="encabezado">Hora</td>
@@ -45,8 +45,8 @@
         </script>
 </div>
 
-<p class="parrafo">Mis aventuras</p>
-<div class="carrusel-contenedor">
+<p class="parrafo" id="descripcion">Mis aventuras</p>
+<div class="carrusel-contenedor" id=descripcion>
   <div class="carrusel" id="carrusel">
   <img src="carrito.svg" alt="4">
     <img src="caballo.jpg" alt="1">
@@ -68,8 +68,8 @@
   }
 </script>
 
-<p class="parrafo">Tenemos el honor de invitarte a celebrar este gran evento, que se llevará a cabo en casa de mis abuelos. Te esperamos, no faltes.</p>
-<div class="encuesta">
+<p class="parrafo" id="descripcion">Tenemos el honor de invitarte a celebrar este gran evento, que se llevará a cabo en casa de mis abuelos. Te esperamos, no faltes.</p>
+<div class="encuesta" id="tabla">
   <h2>¿Confirmas tu asistencia?</h2>
   <form id="form-asistencia">
     <label>
@@ -98,9 +98,27 @@
     }
   });
 </script>
-    <p class="parrafo">Ubicación</p>
+    <p class="parrafo" id="despedida">Ubicación</p>
     
-      <a href="https://maps.app.goo.gl/hsXyF2AVv5bcwNDg8"><img class="ubicacion" src="Josef Aaroon (4).svg" alt="ubi"></a>
+      <a href="https://maps.app.goo.gl/hsXyF2AVv5bcwNDg8"><img class="ubicacion" id="despedida" src="Josef Aaroon (4).svg" alt="ubi"></a>
+<script>
+  const ids = ["bienvenida", "descripcion", "tabla", "despedida"];
+
+  function revisarScroll() {
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      const scrollY = window.scrollY + window.innerHeight;
+      if (scrollY > el.offsetTop + 50) {
+        el.classList.add("visible");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revisarScroll);
+  window.addEventListener("load", revisarScroll);
+</script>
+
+</body>
      
 
 </html>
