@@ -64,9 +64,7 @@ body{background-color: #33b2fc;}
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      text-align: center; opacity: 0;
-      transform: translateX(-100px);
-      animation: slideIn 1s ease-out forwards;}
+      text-align: center;}
 
 
     label {
