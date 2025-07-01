@@ -61,4 +61,5 @@ body{background-color: #33b2fc;}
 .encabezado{text-align: center;font-family:Dancing Script; font-size: 50px;color: rgb(230, 235, 239);}
 .ubicacion{ size: cover;width: 100%;
       height: auto;}
+ label, button { font-size: 18px; margin-top: 10px; display: block; }
 
