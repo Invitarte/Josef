@@ -69,18 +69,19 @@
 </script>
 
 <p class="parrafo">Tenemos el honor de invitarte a celebrar este gran evento, que se llevará a cabo en casa de mis abuelos. Te esperamos, no faltes.</p>
-<p class=Confirmacion>¿Confirmas tu asistencia?</p>
-<form id="form-asistencia">
-  <label>
-    <input type="radio" name="respuesta" value="Sí"> Sí
-  </label>
-  <label>
-    <input type="radio" name="respuesta" value="No"> No
-  </label>
-  <button type="submit">Enviar</button>
-</form>
-
-<p id="mensaje"></p>
+<div class="encuesta">
+  <h2>¿Confirmas tu asistencia?</h2>
+  <form id="form-asistencia">
+    <label>
+      <input type="radio" name="respuesta" value="Sí"> Sí
+    </label>
+    <label>
+      <input type="radio" name="respuesta" value="No"> No
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="mensaje"></p>
+</div>
 
 <script>
   const form = document.getElementById('form-asistencia');
