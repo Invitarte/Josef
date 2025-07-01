@@ -59,6 +59,6 @@ body{background-color: #33b2fc;}
       height: 100%;} 
 .tabla{text-align: center;font-family:Dancing Script; font-size: 30px;color: rgb(36, 102, 159);}
 .encabezado{text-align: center;font-family:Dancing Script; font-size: 50px;color: rgb(230, 235, 239);}
-.ubicacion{ width: 100%;
+.ubicacion{ size: cover;width: 100%;
       height: auto;}
 
