@@ -58,7 +58,11 @@ body{background-color: #33b2fc;}
 .tabla{text-align: center;font-family:Dancing Script; font-size: 25px;color: rgb(36, 102, 159);}
 .encabezado{text-align: center;font-family:Dancing Script; font-size: 35px;color: rgb(230, 235, 239);}
 .fondo{ size: cover;width: 100%;
-      height: auto;}
+      height: auto;transition: all 0.6s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
 .ubicacion{ size: cover;width: 100%;
       height: auto;}
  .encuesta {
