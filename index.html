@@ -69,7 +69,34 @@
 </script>
 
 <p class="parrafo">Tenemos el honor de invitarte a celebrar este gran evento, que se llevará a cabo en casa de mis abuelos. Te esperamos, no faltes.</p>
-<p class="parrafo">Ubicación</p>
+<h2>¿Confirmas tu asistencia?</h2>
+<form id="form-asistencia">
+  <label>
+    <input type="radio" name="respuesta" value="Sí"> Sí
+  </label>
+  <label>
+    <input type="radio" name="respuesta" value="No"> No
+  </label>
+  <button type="submit">Enviar</button>
+</form>
+
+<p id="mensaje"></p>
+
+<script>
+  const form = document.getElementById('form-asistencia');
+  const mensaje = document.getElementById('mensaje');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const seleccion = document.querySelector('input[name="respuesta"]:checked');
+    if (seleccion) {
+      localStorage.setItem('asistencia', seleccion.value);
+      mensaje.textContent = 'Tu respuesta ha sido guardada: ' + seleccion.value;
+    } else {
+      mensaje.textContent = 'Por favor selecciona una opción.';
+    }
+  });
+    <p class="parrafo">Ubicación</p>
     
       <a href="https://maps.app.goo.gl/Urk6rJz1wywJxbFi6"><img class="ubicacion" src="Josef Aaroon (4).svg" alt="ubi"></a>
      
