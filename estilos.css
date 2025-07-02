@@ -94,6 +94,14 @@ th, td {
       margin-top: 2'px;
       font-weight: bold;
     }
-.invisible {opacity: 0; transform: translateY(50px); transition: all 0.8s ease;}
-.visible {opacity: 1; transform: translateY(0);}
+  .animable {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
