@@ -63,8 +63,7 @@ body{background-color: #33b2fc;}
       transform: translateY(50px);
     }
 
-.ubicacion{ size: cover;width: 100%;
-      height: auto;}
+.ubicacion{ size: cover;width: 100%; height: auto; transition: all 0.6s ease; opacity: 0; transform: translateY(50px)}
  .encuesta {
       background: white;
       padding: 30px;
