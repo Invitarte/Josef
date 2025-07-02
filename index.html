@@ -14,7 +14,8 @@
 <body>
   <img id="Bienvenida" class="fondo"  src="Josef Aaroon (2).svg" alt="diseño">
  <!--COMENZAR TABLE-->
- <table align="center" id="Bienvenida">
+<div id="tabla-container" class="bloque animable">
+ <table align="center">
   <tr>
     <td class="encabezado">Fecha</td>
     <td class="encabezado">Hora</td>
@@ -31,6 +32,7 @@
     
   </tr>
  </table>
+</div>
    <script>
       const fin = new Date("2025-07-05T19:30:00").getTime();
       setInterval(() => {const ahora = new Date().getTime();
