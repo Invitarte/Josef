@@ -54,14 +54,10 @@ body{background-color: #33b2fc;}
   font-weight: 600;
   font-style: normal;
 }
-.parrafo{font-size: 30px;color: blanchedalmond; text-align: center;}
-.tabla{text-align: center;font-family:Dancing Script; font-size: 25px;color: rgb(36, 102, 159);}
-.encabezado{text-align: center;font-family:Dancing Script; font-size: 35px;color: rgb(230, 235, 239);}
-.fondo{ size: cover;width: 100%;
-      height: auto;transition: all 0.6s ease;
-      opacity: 0;
-      transform: translateY(50px);
-    }
+.parrafo{font-size: 30px;color: blanchedalmond; text-align: center;transition: all 0.6s ease; opacity: 0; transform: translateY(50px);}
+.tabla{text-align: center;font-family:Dancing Script; font-size: 25px;color: rgb(36, 102, 159);transition: all 0.6s ease; opacity: 0; transform: translateY(50px);}
+.encabezado{text-align: center;font-family:Dancing Script; font-size: 35px;color: rgb(230, 235, 239);transition: all 0.6s ease; opacity: 0; transform: translateY(50px);}
+.fondo{ size: cover;width: 100%; height: auto;transition: all 0.6s ease; opacity: 0; transform: translateY(50px);}
 
 .ubicacion{ size: cover;width: 100%; height: auto; transition: all 0.6s ease; opacity: 0; transform: translateY(50px)}
  .encuesta {
